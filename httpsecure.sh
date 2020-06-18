@@ -13,7 +13,7 @@ printf "${BLUE}[*] Setting Up SSL Configuration For Apache2 Server...${NC}\n"
 sudo mkdir /tmp/sslcerts
 cd /tmp/sslcerts
 printf "${BLUE}[*] Creating SSL Server Key...${NC}\n"
-sudo openssl genrsa -des3 -out server.key 1024
+sudo openssl genrsa -des3 -out server.key 4096
 if [ -f "server.key" ]; then
   printf "${BLUE}[*] Creating and Encrypting Certificate Signing Request...${NC}\n"
   sudo openssl req -new -key server.key -out server.csr
