@@ -1,6 +1,8 @@
-# HTTPSecure - Easy Tool for HTTP to HTTPS Migration (Apache2 Only!)
+# HTTPSecure - Tool for Encrypting HTTP to HTTPS On Apache2 Servers
 
-Just a simple script I wrote to make securing your Apache2 websites much easier!
+**Update:** Now Supporting SSL v3.0 TLS v1.3 Encryption!
+
+Just a simple script I wrote to automate the use of HTTPS encryption for apache2 servers. It will produce a very secure 4096 bit key, SSL v3.0 signing, and TLS v1.3 connection encryption.
 
 ## Getting Started
 
