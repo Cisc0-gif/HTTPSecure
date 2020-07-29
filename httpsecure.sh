@@ -41,6 +41,8 @@ if [ -f "server.key" ]; then
         printf "${BLUE}[*] Change SSLCertificateKeyFile to '/etc/apache2/ssl_certs/server.key'${NC}\n"
         wait_func
         sudo nano /etc/apache2/sites-available/default-ssl.conf
+        printf "${BLUE}[*] Changing apache2 default index.html to https version...${NC}\n"
+        sudo curl https://pastebin.com/raw/XpLGgREf > /var/www/html/index.html
         sudo service apache2 restart
         printf "${GREEN}[+] Server Migrated To SSL Scheme (HTTPS)!${NC}\n"
         exit 1
